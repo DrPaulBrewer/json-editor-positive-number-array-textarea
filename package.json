@@ -1,0 +1,27 @@
+{
+  "name": "json-editor-positive-number-array-textarea",
+  "version": "0.1.0",
+  "description": "customize json-editor by enabling easier input of positive numeric arrays via textarea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea.git"
+  },
+  "keywords": [
+    "json-editor",
+    "numeric-array",
+    "textarea"
+  ],
+  "author": "drpaulbrewer@eaftc.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea/issues"
+  },
+  "homepage": "https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea#readme",
+  "dependencies": {
+    "positive-number-array": "^1.0.0"
+  }
+}
