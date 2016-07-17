@@ -27,12 +27,18 @@ function customizeJSONEditor(){
 		return positiveNumberArray(this.value) || [];
 	    }
 	});
-    } else {
-	console.log("window.JSONEditor not loaded when json-editor-textarea-as-array-of-positive-numbers customization invoked, customization not applied");
-    }
 }
 
-customizeJSONEditor();
-
-module.exports = customizeJSONEditor;
+if (window.JSONEditor){
+    customizeJSONEditor();
+} else {
+    console.log("deferring JSON Editor customization to DOMContentLoaded");
+    document.addEventListener("DOMContentLoaded", function(){ 
+	if (window.JSONEditor){
+	    customizeJSONEditor(); 
+	} else {
+	    console.log("could not load JSON Editor customization at DOMContentLoaded");
+	}
+    });
+}
 
