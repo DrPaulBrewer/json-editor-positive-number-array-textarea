@@ -2,7 +2,7 @@
 
 const positiveNumberArray = require('positive-number-array');
 
-function customizeJSONEditor(){
+function JSONEditorPositiveNumberArrayTextarea(){
 
     if (window.JSONEditor){
 
@@ -30,16 +30,6 @@ function customizeJSONEditor(){
     }
 }
 
-if (window.JSONEditor){
-    customizeJSONEditor();
-} else {
-    console.log("deferring JSON Editor customization to DOMContentLoaded");
-    document.addEventListener("DOMContentLoaded", function(){ 
-	if (window.JSONEditor){
-	    customizeJSONEditor(); 
-	} else {
-	    console.log("could not load JSON Editor customization at DOMContentLoaded");
-	}
-    });
-}
+module.exports = JSONEditorPositiveNumberArrayTextarea;
+
 
