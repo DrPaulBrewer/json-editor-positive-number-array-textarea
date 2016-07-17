@@ -27,6 +27,7 @@ function customizeJSONEditor(){
 		return positiveNumberArray(this.value) || [];
 	    }
 	});
+    }
 }
 
 if (window.JSONEditor){

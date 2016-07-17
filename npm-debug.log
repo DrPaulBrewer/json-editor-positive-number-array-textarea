@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Z/Projects/json-editor-positive-number-array-textarea',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/paul/.npm correctMkdir not in flight; initializing
+10 info lifecycle json-editor-positive-number-array-textarea@0.2.0~prepublish: json-editor-positive-number-array-textarea@0.2.0
+11 silly lifecycle json-editor-positive-number-array-textarea@0.2.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package.tgz',
+12 verbose tar pack   '/Z/Projects/json-editor-positive-number-array-textarea' ]
+13 verbose tarball /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package.tgz
+14 verbose folder /Z/Projects/json-editor-positive-number-array-textarea
+15 verbose addLocalTarball adding from inside cache /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package.tgz
+16 verbose correctMkdir /home/paul/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd json-editor-positive-number-array-textarea@0.2.0
+18 verbose afterAdd /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/paul/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package/package.json written
+21 silly publish { name: 'json-editor-positive-number-array-textarea',
+21 silly publish   version: '0.2.0',
+21 silly publish   description: 'customize json-editor by enabling easier input of positive numeric arrays via textarea',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea.git' },
+21 silly publish   keywords: [ 'json-editor', 'numeric-array', 'textarea' ],
+21 silly publish   author: { name: 'drpaulbrewer@eaftc.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea/issues' },
+21 silly publish   homepage: 'https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea#readme',
+21 silly publish   dependencies: { 'positive-number-array': '^1.0.0' },
+21 silly publish   readme: 'json-editor-positive-number-array-textarea\n======\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '8a9078fc0517d68783d5dbff064871073659e0dd',
+21 silly publish   _id: 'json-editor-positive-number-array-textarea@0.2.0',
+21 silly publish   _shasum: '5328907ed7146043c2682fa70feecda14d3ab292',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name json-editor-positive-number-array-textarea
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'json-editor-positive-number-array-textarea',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'json-editor-positive-number-array-textarea',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/json-editor-positive-number-array-textarea
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/paul/.npm/json-editor-positive-number-array-textarea/0.2.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/json-editor-positive-number-array-textarea
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 3:23:33 AM
+33 verbose request using bearer token for auth
+34 verbose request id 74e02c26d5271eaf
+35 http request PUT https://registry.npmjs.org/json-editor-positive-number-array-textarea
+36 http 403 https://registry.npmjs.org/json-editor-positive-number-array-textarea
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 17 Jul 2016 03:23:34 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-atl6234-ATL',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1468725813.343831,VS0,VE858',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/paul/.npm/registry.npmjs.org/json-editor-positive-number-array-textarea on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.2.0." : json-editor-positive-number-array-textarea
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid json-editor-positive-number-array-textarea
+43 verbose cwd /Z/Projects/json-editor-positive-number-array-textarea
+44 error Linux 3.19.0-64-generic
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.2.2
+47 error npm  v3.9.5
+48 error code E403
+49 error "You cannot publish over the previously published version 0.2.0." : json-editor-positive-number-array-textarea
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
