@@ -1,6 +1,6 @@
 {
   "name": "json-editor-positive-number-array-textarea",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "customize json-editor by enabling easier input of positive numeric arrays via textarea",
   "main": "index.js",
   "scripts": {
