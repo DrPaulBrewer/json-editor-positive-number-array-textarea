@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/drpaulbrewer/json-editor-positive-number-array-textarea#readme",
   "dependencies": {
-    "positive-number-array": "^1.1.0"
+    "positive-number-array": "^1"
   }
 }
